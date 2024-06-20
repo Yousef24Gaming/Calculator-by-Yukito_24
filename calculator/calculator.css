@@ -1,0 +1,181 @@
+@font-face {
+  font-family: calculator;
+  src: url(Digital7-rg1mL.ttf);
+}
+body {
+  /*
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgb(220, 224, 225) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );*/
+  /*
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+  user-select: none;
+}
+.calculator-body {
+  align-items: center;
+  background: rgb(5, 3, 0);
+  right: 600px;
+  top: 50px;
+
+  width: 270px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  border-radius: 8px;
+  position: absolute;
+}
+#clc-display,
+.displayRes {
+  padding: 4px;
+  height: 25px;
+  color: white;
+  border: 1px rgba(255, 255, 255, 0.838) solid;
+  border-radius: 5px;
+  font-family: calculator;
+  font-size: 1.2em;
+}
+.displayEqual {
+  background-color: rgb(94, 93, 93);
+  border: none;
+}
+#clc-display {
+  display: none;
+}
+.clc-button {
+  background: rgb(29, 28, 31);
+  opacity: 0.6;
+  color: rgb(23, 210, 252);
+  width: 55px;
+  height: 55px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 2px;
+  border-radius: 8px;
+}
+.gradient-blue {
+  width: 80px;
+  height: 40px;
+  background: rgb(9, 154, 155);
+  background: radial-gradient(
+    circle,
+    rgba(9, 154, 155, 1) 0%,
+    rgba(6, 0, 2, 1) 68%
+  );
+
+  position: absolute;
+  top: 0px;
+  left: 60%;
+}
+.clc-button.operater {
+  background-color: rgb(12, 152, 177);
+  color: white;
+  font-weight: bold;
+
+  margin-left: 4px;
+}
+.clc-button.zero {
+  width: 60px;
+  left: 30px;
+}
+.backspace {
+  width: 55px;
+}
+.equal {
+  background-color: rgb(9, 191, 252);
+  width: 55px;
+  height: 55px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 3px;
+  color: white;
+}
+.clc-button.operater.plus {
+  height: 55px;
+}
+.clc-button.active {
+  border: 1px rgb(81, 24, 24) solid;
+}
+.active,
+.clc-button:active {
+  background-color: aqua;
+}
+.maker {
+  color: white;
+  position: relative;
+  left: 140px;
+  margin-top: 10px;
+}
+#owner {
+  font-size: 0.8em;
+}
+.ani {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: black;
+  z-index: -1;
+  animation: jawla 4s linear infinite;
+}
+@keyframes jawla {
+  0% {
+    top: -25px;
+    left: -25px;
+  }
+  25% {
+    top: -25px;
+    left: 263px;
+  }
+  50% {
+    top: 635px;
+    left: 263px;
+  }
+  75% {
+    top: 635px;
+    left: -25px;
+  }
+  100% {
+    top: -25px;
+    left: -25px;
+  }
+}
+.future {
+  width: 30px;
+  height: 5px;
+  top: 20px;
+  position: relative;
+  left: 130px;
+  color: rgb(35, 163, 222);
+  background-color: aqua;
+  animation: futureMoves 1.5s linear infinite;
+  z-index: 20;
+  display: block;
+}
+@keyframes futureMoves {
+  0%,
+  100% {
+    top: 20px;
+    left: 240px;
+  }
+  50% {
+    top: 20px;
+    left: 0px;
+  }
+}
+.clc-button.comparison {
+  width: 35px;
+  display: inline;
+}
+#visible {
+  visibility: hidden;
+}
