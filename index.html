@@ -239,43 +239,8 @@ calculation=result;localStorage.setItem('calculation', calculation);resEqual();"
         calculation = "";
       }
 
-      const name = "Youssef";
 
-      function greet(myName) {
-        if (!myName) {
-          console.log(`Hello there!`);
-        } else {
-          console.log(`Hello ${myName}`);
-        }
-      }
-      greet(name);
-      greet("Simon");
-      greet();
-
-      function converToFehrenheit(nbrCelceuis) {
-        const nbrFehrenheit = (nbrCelceuis * 9) / 5 + 32;
-
-        return `${nbrFehrenheit}F`;
-      }
-
-      function converToCelcius(fahrenheit) {
-        const nbrCelcuis = ((fahrenheit - 32) * 5) / 9;
-
-        return `${nbrCelcuis}C`;
-      }
-
-      function convertTempreture(degre, unit) {
-        if (unit === "C") {
-          return console.log(converToFehrenheit(degre));
-        } else if (unit === "F") {
-          return console.log(converToCelcius(degre));
-        }
-      }
-
-      console.log(converToFehrenheit(25));
-      console.log(converToCelcius(86));
-      convertTempreture(25, "C");
-      convertTempreture(86, "F");
+      
       let calculateResult;
       let result = "";
 
