@@ -3,15 +3,6 @@
   src: url(Digital7-rg1mL.ttf);
 }
 body {
-  /*
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgb(220, 224, 225) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );*/
-  /*
-  background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 
@@ -20,16 +11,14 @@ body {
 .calculator-body {
   align-items: center;
   background: rgb(5, 3, 0);
-  right: 600px;
-  top: 50px;
 
-  width: 270px;
+  position: relative;
+  margin: 0 auto;
+  width: 20vw;
+
   height: auto;
   padding: 10px;
   border-radius: 10px;
-  margin: auto;
-  border-radius: 8px;
-  position: absolute;
 }
 #clc-display,
 .displayRes {
@@ -134,11 +123,11 @@ body {
   }
   25% {
     top: -25px;
-    left: 263px;
+    left: 295px;
   }
   50% {
     top: 635px;
-    left: 263px;
+    left: 295px;
   }
   75% {
     top: 635px;
@@ -178,4 +167,257 @@ body {
 }
 #visible {
   visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .calculator-body {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .clc-button {
+    width: 20%;
+    height: 50px;
+    font-size: 1.2em;
+  }
+  .clc-button.zero {
+    width: 40%;
+  }
+  .clc-button.operater {
+    width: 20%;
+  }
+  .clc-button.operater.plus {
+    width: 40%;
+  }
+  .backspace {
+    width: 20%;
+  }
+  .equal {
+    width: 20%;
+    height: 50px;
+  }
+  .gradient-blue {
+    width: 100%;
+    height: 50px;
+    left: 0;
+  }
+  .maker {
+    left: 0;
+    margin-top: 0;
+  }
+  .future {
+    left: 0;
+    top: 0;
+  }
+  .clc-button.comparison {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .clc-button {
+    width: 15%;
+    height: 50px;
+    font-size: 1.2em;
+  }
+  .comparison {
+    width: 15%;
+  }
+  .clc-button.zero {
+    width: 15%;
+  }
+  .clc-button.operater {
+    width: 15%;
+  }
+  .clc-button.operater.plus {
+    width: 15%;
+  }
+  .backspace {
+    width: 15%;
+  }
+  .equal {
+    width: 15%;
+    height: 50px;
+  }
+  .gradient-blue {
+    width: 80px;
+    height: 40px;
+    background: rgb(9, 154, 155);
+    background: radial-gradient(
+      circle,
+      rgba(9, 154, 155, 1) 0%,
+      rgba(6, 0, 2, 1) 68%
+    );
+
+    position: absolute;
+    top: 0px;
+    left: 60%;
+  }
+  .maker {
+    left: 0;
+    margin-top: 0;
+  }
+  .future {
+    left: 0;
+    top: 0;
+  }
+  .clc-button.comparison {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .clc-button {
+    width: 30%;
+    height: 50px;
+    font-size: 1.2em;
+  }
+  .clc-button.zero {
+    width: 60%;
+  }
+  .clc-button.operater {
+    width: 30%;
+  }
+  .clc-button.operater.plus {
+    width: 60%;
+  }
+  .backspace {
+    width: 30%;
+  }
+  .equal {
+    width: 30%;
+    height: 50px;
+  }
+  .gradient-blue {
+    width: 80px;
+    height: 40px;
+    background: rgb(9, 154, 155);
+    background: radial-gradient(
+      circle,
+      rgba(9, 154, 155, 1) 0%,
+      rgba(6, 0, 2, 1) 68%
+    );
+
+    position: absolute;
+    top: 0px;
+    left: 60%;
+  }
+  .maker {
+    left: 0;
+    margin-top: 0;
+  }
+  .future {
+    left: 0;
+    top: 0;
+  }
+  .clc-button.comparison {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .clc-button {
+    width: 40%;
+    height: 50px;
+    font-size: 1.2em;
+  }
+  .clc-button.zero {
+    width: 80%;
+  }
+  .clc-button.operater {
+    width: 40%;
+  }
+  .clc-button.operater.plus {
+    width: 80%;
+  }
+  .backspace {
+    width: 40%;
+  }
+  .equal {
+    width: 40%;
+    height: 50px;
+  }
+  .gradient-blue {
+    width: 80px;
+    height: 40px;
+    background: rgb(9, 154, 155);
+    background: radial-gradient(
+      circle,
+      rgba(9, 154, 155, 1) 0%,
+      rgba(6, 0, 2, 1) 68%
+    );
+
+    position: absolute;
+    top: 0px;
+    left: 60%;
+  }
+  .maker {
+    left: 0;
+    margin-top: 0;
+  }
+  .future {
+    left: 0;
+    top: 0;
+  }
+  .clc-button.comparison {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .calculator-body {
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: auto;
+    border-radius: 10;
+  }
+  .clc-button {
+    width: 20%;
+    height: 50px;
+    font-size: 1.2em;
+  }
+  .clc-button.zero {
+    width: 40%;
+  }
+  .clc-button.operater {
+    width: 20%;
+  }
+  .clc-button.operater.plus {
+    width: 40%;
+  }
+  .backspace {
+    width: 20%;
+  }
+  .equal {
+    width: 20%;
+    height: 50px;
+  }
+  .gradient-blue {
+    width: 100px;
+    height: 40px;
+    background: rgb(9, 154, 155);
+    background: radial-gradient(
+      circle,
+      rgba(9, 154, 155, 1) 0%,
+      rgba(6, 0, 2, 1) 68%
+    );
+
+    position: absolute;
+    top: 0px;
+    left: 60%;
+  }
+  .maker {
+    left: 0;
+    margin-top: 0;
+  }
+  .future {
+    left: 0;
+    top: 0;
+  }
+  .clc-button.comparison {
+    width: 20%;
+  }
 }
